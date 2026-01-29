@@ -1,0 +1,13 @@
+# weather.py
+import random
+
+# Ask the user how many days to simulate
+days = int(input("Enter the number of days: "))
+
+# Loop through the number of days
+for day in range(1, days + 1):
+    # Generate a random temperature between, say, -10°F and 40°F
+    temperature = random.randint(20, 100)
+    
+    # Print the temperature for each day
+    print(f"Day {day}: {temperature}°F")
